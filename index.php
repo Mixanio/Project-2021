@@ -8,35 +8,20 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.php">YandexLyceum Project</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="balls.php">Шарики</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="waves.php">Волны</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search_map.php">Поиск на карте по адресу</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 </header>
-<?php
-$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-?>
-<h2>
-    YandexLyceum Project
-</h2>
-<h4>
-    <img src="static/img/lyceumlogo.jpg" class="rounded mx-auto d-block" style="width: 50%;" alt="...">
-</h4>
-
-<footer class="page-footer font-small mdb-color pt-4 bg-dark text-white">
-    <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left mt-3 pb-3">
-            <hr class="w-100 clearfix d-md-none">
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Ссылки</h6>
-                <p>
-                    <a href="https://yandexlyceum.ru/">Яндекс Лицей</a>
-                </p>
-            </div>
-            <hr class="w-100 clearfix d-md-none">
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Контакты</h6>
-                <p>mixanio@yandex.ru</p>
-            </div>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
