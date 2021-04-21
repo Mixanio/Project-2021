@@ -23,7 +23,7 @@
                     <a class="nav-link" href="waves.php">Волны</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="search_map.php">Поиск на карте по адресу</a>
+                    <a class="nav-link" href="search_map.php">Поиск по Яндекс.Картам</a>
                 </li>
             </ul>
         </div>

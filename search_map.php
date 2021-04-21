@@ -1,3 +1,4 @@
+<?php if(isset($_POST['addr'])){$data = '/usr/bin/python3 scripts/search.py '.$_POST['addr']; exec($data);} ?>
 <html lang="ru">
 <head>
     <title>YandexLyceum Project</title>
@@ -17,11 +18,22 @@
                     <a class="nav-link" href="waves.php">Волны</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="search_map.php">Поиск на карте по адресу</a>
+                    <a class="nav-link" href="search_map.php">Поиск по Яндекс.Картам</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <h3 align="center">Поиск по Яндекс.Картам</h3>
+        <div class="col">
+            <div class="row justify-content-center">
+                <form action='/search_map.php' method='post'> <input type="text" class="form-control" placeholder="Адрес" name="addr"> </form>
+            </div>
+            <img src="map.png" alt="Перезагрузите страницу">
+        </div>
+    </div>
+</div>
 </body>
 </html>
