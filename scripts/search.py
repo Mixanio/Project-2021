@@ -6,8 +6,6 @@ from PIL import Image
 
 arg = sys.argv[1:]
 toponym_to_find = "+".join(arg)
-with open('test.txt', 'w') as file:
-    file.write(' '.join(arg))
 geocoder_api_server = "http://geocode-maps.yandex.ru/1.x/"
 geocoder_params = {
     "apikey": "40d1649f-0493-4b70-98ba-98533de7710b",

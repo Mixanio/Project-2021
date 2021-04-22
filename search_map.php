@@ -31,8 +31,8 @@
             <div class="row justify-content-center">
                 <form action='/search_map.php' method='post'> <input type="text" class="form-control" placeholder="Адрес" name="addr"> </form>
             </div>
-            <img src="map.png" alt="Перезагрузите страницу">
         </div>
+        <img src="map.png" alt="Перезагрузите страницу">
     </div>
 </div>
 </body>
