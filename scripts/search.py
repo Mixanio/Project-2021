@@ -4,6 +4,8 @@ import json
 from io import BytesIO
 from PIL import Image
 
+
+a = {'house': '0.005', 'street': '0.01', 'locality': '0.05', 'province': '3', 'country': '20'}
 arg = sys.argv[1:]
 toponym_to_find = "+".join(arg)
 geocoder_api_server = "http://geocode-maps.yandex.ru/1.x/"
@@ -15,11 +17,13 @@ response = requests.get(geocoder_api_server, params=geocoder_params)
 if not response:
     pass
 json_response = response.json()
+kind = json_response["response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]["metaDataProperty"]["GeocoderMetaData"]["kind"]
+
 toponym = json_response["response"]["GeoObjectCollection"][
     "featureMember"][0]["GeoObject"]
 toponym_coodrinates = toponym["Point"]["pos"]
 toponym_longitude, toponym_lattitude = toponym_coodrinates.split(" ")
-delta = "0.02"
+delta = a[kind]
 map_params = {
     "ll": ",".join([toponym_longitude, toponym_lattitude]),
     "spn": ",".join([delta, delta]),
