@@ -5,7 +5,7 @@ from io import BytesIO
 from PIL import Image
 
 
-a = {'house': '0.005', 'street': '0.01', 'locality': '0.05', 'province': '3', 'country': '20'}
+a = {'house': '0.005', 'street': '0.01', 'locality': '0.06', 'province': '3', 'country': '20'}
 arg = sys.argv[1:]
 toponym_to_find = "+".join(arg)
 geocoder_api_server = "http://geocode-maps.yandex.ru/1.x/"
